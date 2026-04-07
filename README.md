@@ -67,7 +67,7 @@
 ### 1. Клонировать проект
 
 
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/BoburDeveloper/project_tall_stack.git
 cd your-repo
 
 composer install
