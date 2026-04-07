@@ -11,6 +11,8 @@ class PostList extends Component
     public $search = '';
     public $hasMore = true;
 
+    public $maxCount = 60;
+
     public function mount()
     {
         $this->loadPosts();
@@ -18,7 +20,7 @@ class PostList extends Component
 
     public function loadPosts()
     {
-        $all = collect(range(1, 30))->map(function ($i) {
+        $all = collect(range(1, $this->maxCount))->map(function ($i) {
             return [
                 'id' => $i,
                 'title' => "Post $i",
